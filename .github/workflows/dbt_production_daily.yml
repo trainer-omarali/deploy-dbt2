@@ -1,6 +1,8 @@
 name: dbt_production_daily
 
-on: workflow_dispatch
+on:
+  schedule:
+    - cron: '22 08 11 * *'
 
 jobs:
   dbt_production_daily:
